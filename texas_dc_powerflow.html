@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3f601b577ce8b485836da106ec402cb4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-ant-path@1.1.2/dist/leaflet-ant-path.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3f601b577ce8b485836da106ec402cb4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3f601b577ce8b485836da106ec402cb4 = L.map(
+                "map_3f601b577ce8b485836da106ec402cb4",
+                {
+                    center: [31.0, -97.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6868f7b11d12728e90f0efea82cb750e = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6868f7b11d12728e90f0efea82cb750e.addTo(map_3f601b577ce8b485836da106ec402cb4);
+        
+    
+            var circle_marker_8c36c5960d2dac0fcd28d688a7e14e3e = L.circleMarker(
+                [32.78, -96.8],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_3f601b577ce8b485836da106ec402cb4);
+        
+    
+        var popup_3a7dc9ee91e2604fbb01561ff6abfbf0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2b331b809c28c97c84a336935053847f = $(`<div id="html_2b331b809c28c97c84a336935053847f" style="width: 100.0%; height: 100.0%;">     <b>Dallas</b><br>     Angle: 0.0000 rad<br>     Injection: 400.0 MW     </div>`)[0];
+                popup_3a7dc9ee91e2604fbb01561ff6abfbf0.setContent(html_2b331b809c28c97c84a336935053847f);
+            
+        
+
+        circle_marker_8c36c5960d2dac0fcd28d688a7e14e3e.bindPopup(popup_3a7dc9ee91e2604fbb01561ff6abfbf0)
+        ;
+
+        
+    
+    
+            circle_marker_8c36c5960d2dac0fcd28d688a7e14e3e.bindTooltip(
+                `<div>
+                     Dallas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0437aa87e0d59c4dac3315bc8abd5152 = L.circleMarker(
+                [29.76, -95.37],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_3f601b577ce8b485836da106ec402cb4);
+        
+    
+        var popup_038cee038aec6c43170f136ebfc4aafa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ed504d526facbdda8e152f9923b0d1ec = $(`<div id="html_ed504d526facbdda8e152f9923b0d1ec" style="width: 100.0%; height: 100.0%;">     <b>Houston</b><br>     Angle: -34.3376 rad<br>     Injection: -250.0 MW     </div>`)[0];
+                popup_038cee038aec6c43170f136ebfc4aafa.setContent(html_ed504d526facbdda8e152f9923b0d1ec);
+            
+        
+
+        circle_marker_0437aa87e0d59c4dac3315bc8abd5152.bindPopup(popup_038cee038aec6c43170f136ebfc4aafa)
+        ;
+
+        
+    
+    
+            circle_marker_0437aa87e0d59c4dac3315bc8abd5152.bindTooltip(
+                `<div>
+                     Houston
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8532a3398eb30a1e8f26fc288109be4b = L.circleMarker(
+                [30.27, -97.74],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_3f601b577ce8b485836da106ec402cb4);
+        
+    
+        var popup_de53731cf000226b626b6c7b9656fc23 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_015bf06ed7e51b56aef1cd343cf48375 = $(`<div id="html_015bf06ed7e51b56aef1cd343cf48375" style="width: 100.0%; height: 100.0%;">     <b>Austin</b><br>     Angle: -27.3974 rad<br>     Injection: -100.0 MW     </div>`)[0];
+                popup_de53731cf000226b626b6c7b9656fc23.setContent(html_015bf06ed7e51b56aef1cd343cf48375);
+            
+        
+
+        circle_marker_8532a3398eb30a1e8f26fc288109be4b.bindPopup(popup_de53731cf000226b626b6c7b9656fc23)
+        ;
+
+        
+    
+    
+            circle_marker_8532a3398eb30a1e8f26fc288109be4b.bindTooltip(
+                `<div>
+                     Austin
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7f04fefeb20718e4fce917123e56acd1 = L.circleMarker(
+                [29.42, -98.49],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_3f601b577ce8b485836da106ec402cb4);
+        
+    
+        var popup_cfa978d13abae71407b58211588434af = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f385acae31298c4505a5476d9ebab29a = $(`<div id="html_f385acae31298c4505a5476d9ebab29a" style="width: 100.0%; height: 100.0%;">     <b>San Antonio</b><br>     Angle: -32.1102 rad<br>     Injection: -50.0 MW     </div>`)[0];
+                popup_cfa978d13abae71407b58211588434af.setContent(html_f385acae31298c4505a5476d9ebab29a);
+            
+        
+
+        circle_marker_7f04fefeb20718e4fce917123e56acd1.bindPopup(popup_cfa978d13abae71407b58211588434af)
+        ;
+
+        
+    
+    
+            circle_marker_7f04fefeb20718e4fce917123e56acd1.bindTooltip(
+                `<div>
+                     San Antonio
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_b21a6fe7209395f1672fa20c2ecc1668 = L.polyline(
+                [[32.78, -96.8], [30.27, -97.74]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 10.0}
+            ).addTo(map_3f601b577ce8b485836da106ec402cb4);
+        
+    
+        var popup_b86bc497426fd6ce47b6584466616497 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7de877f8c99f247910ace4ac17b1f8ac = $(`<div id="html_7de877f8c99f247910ace4ac17b1f8ac" style="width: 100.0%; height: 100.0%;">     <b>Dallas → Austin</b><br>     Flow magnitude: 228.3 MW<br>     Reactance: 0.12     </div>`)[0];
+                popup_b86bc497426fd6ce47b6584466616497.setContent(html_7de877f8c99f247910ace4ac17b1f8ac);
+            
+        
+
+        poly_line_b21a6fe7209395f1672fa20c2ecc1668.bindPopup(popup_b86bc497426fd6ce47b6584466616497)
+        ;
+
+        
+    
+    
+            poly_line_b21a6fe7209395f1672fa20c2ecc1668.bindTooltip(
+                `<div>
+                     Dallas → Austin
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_0b5d93a12cb573f47deac221b395a858 = L.polyline.antPath(
+              [[32.78, -96.8], [30.27, -97.74]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 10.0,
+  "opacity": 0.9,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 600,
+  "pulseColor": "white",
+}
+        ).addTo(map_3f601b577ce8b485836da106ec402cb4);
+        
+    
+            var poly_line_08c7268f6abfeb53a41ce309ee3532bf = L.polyline(
+                [[32.78, -96.8], [29.76, -95.37]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 8.015917843388959}
+            ).addTo(map_3f601b577ce8b485836da106ec402cb4);
+        
+    
+        var popup_18337648efd7e2ee582a17cbb2b9ca4a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fecb900cb5d477cc65577d7190dccb1f = $(`<div id="html_fecb900cb5d477cc65577d7190dccb1f" style="width: 100.0%; height: 100.0%;">     <b>Dallas → Houston</b><br>     Flow magnitude: 171.7 MW<br>     Reactance: 0.2     </div>`)[0];
+                popup_18337648efd7e2ee582a17cbb2b9ca4a.setContent(html_fecb900cb5d477cc65577d7190dccb1f);
+            
+        
+
+        poly_line_08c7268f6abfeb53a41ce309ee3532bf.bindPopup(popup_18337648efd7e2ee582a17cbb2b9ca4a)
+        ;
+
+        
+    
+    
+            poly_line_08c7268f6abfeb53a41ce309ee3532bf.bindTooltip(
+                `<div>
+                     Dallas → Houston
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_a416f31383b388ab801d7779371711b2 = L.polyline.antPath(
+              [[32.78, -96.8], [29.76, -95.37]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 8.015917843388959,
+  "opacity": 0.9,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 600,
+  "pulseColor": "white",
+}
+        ).addTo(map_3f601b577ce8b485836da106ec402cb4);
+        
+    
+            var poly_line_0242d3ded5a0a2350bd80ebbffd96b01 = L.polyline(
+                [[30.27, -97.74], [29.76, -95.37]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 4.431835686777921}
+            ).addTo(map_3f601b577ce8b485836da106ec402cb4);
+        
+    
+        var popup_b1cd393f0a0600cece900a08349f6688 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bfe108097c133fe560171e7c31e6b4bc = $(`<div id="html_bfe108097c133fe560171e7c31e6b4bc" style="width: 100.0%; height: 100.0%;">     <b>Austin → Houston</b><br>     Flow magnitude: 69.4 MW<br>     Reactance: 0.1     </div>`)[0];
+                popup_b1cd393f0a0600cece900a08349f6688.setContent(html_bfe108097c133fe560171e7c31e6b4bc);
+            
+        
+
+        poly_line_0242d3ded5a0a2350bd80ebbffd96b01.bindPopup(popup_b1cd393f0a0600cece900a08349f6688)
+        ;
+
+        
+    
+    
+            poly_line_0242d3ded5a0a2350bd80ebbffd96b01.bindTooltip(
+                `<div>
+                     Austin → Houston
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_8aa2c0cb1bd8754ab739e043824eb36c = L.polyline.antPath(
+              [[30.27, -97.74], [29.76, -95.37]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 4.431835686777921,
+  "opacity": 0.9,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 600,
+  "pulseColor": "white",
+}
+        ).addTo(map_3f601b577ce8b485836da106ec402cb4);
+        
+    
+            var poly_line_a26605d03942eb74defedfd8db5a22ee = L.polyline(
+                [[30.27, -97.74], [29.42, -98.49]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 4.064184852374838}
+            ).addTo(map_3f601b577ce8b485836da106ec402cb4);
+        
+    
+        var popup_66a633f643a45006d9dc286f1ab0da80 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b1895dbae591c1b714e28d1352aed905 = $(`<div id="html_b1895dbae591c1b714e28d1352aed905" style="width: 100.0%; height: 100.0%;">     <b>Austin → San Antonio</b><br>     Flow magnitude: 58.9 MW<br>     Reactance: 0.08     </div>`)[0];
+                popup_66a633f643a45006d9dc286f1ab0da80.setContent(html_b1895dbae591c1b714e28d1352aed905);
+            
+        
+
+        poly_line_a26605d03942eb74defedfd8db5a22ee.bindPopup(popup_66a633f643a45006d9dc286f1ab0da80)
+        ;
+
+        
+    
+    
+            poly_line_a26605d03942eb74defedfd8db5a22ee.bindTooltip(
+                `<div>
+                     Austin → San Antonio
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_304648975a646d0d2da4d53ea1d184c9 = L.polyline.antPath(
+              [[30.27, -97.74], [29.42, -98.49]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 4.064184852374838,
+  "opacity": 0.9,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 600,
+  "pulseColor": "white",
+}
+        ).addTo(map_3f601b577ce8b485836da106ec402cb4);
+        
+    
+            var poly_line_2b7505cef8c9de8a0e74004e0ee3d3e5 = L.polyline(
+                [[29.42, -98.49], [29.76, -95.37]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 2.31219512195122}
+            ).addTo(map_3f601b577ce8b485836da106ec402cb4);
+        
+    
+        var popup_21a6469963393183137e8c3249718271 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a965a15508b17b54e8a82c19525a5b08 = $(`<div id="html_a965a15508b17b54e8a82c19525a5b08" style="width: 100.0%; height: 100.0%;">     <b>San Antonio → Houston</b><br>     Flow magnitude: 8.9 MW<br>     Reactance: 0.25     </div>`)[0];
+                popup_21a6469963393183137e8c3249718271.setContent(html_a965a15508b17b54e8a82c19525a5b08);
+            
+        
+
+        poly_line_2b7505cef8c9de8a0e74004e0ee3d3e5.bindPopup(popup_21a6469963393183137e8c3249718271)
+        ;
+
+        
+    
+    
+            poly_line_2b7505cef8c9de8a0e74004e0ee3d3e5.bindTooltip(
+                `<div>
+                     San Antonio → Houston
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_fc882ff5e88063c8aa3d68b156e7fe71 = L.polyline.antPath(
+              [[29.42, -98.49], [29.76, -95.37]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 2.31219512195122,
+  "opacity": 0.9,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 600,
+  "pulseColor": "white",
+}
+        ).addTo(map_3f601b577ce8b485836da106ec402cb4);
+        
+</script>
+</html>
